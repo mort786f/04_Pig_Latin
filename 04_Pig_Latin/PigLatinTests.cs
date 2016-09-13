@@ -27,12 +27,12 @@ namespace _04_Pig_Latin
             Translator translator = new Translator();
             Assert.AreEqual("ananabay", translator.Translate("banana"));
         }
-        //[TestMethod]
-        //public void TranslateWordBeginningWithTwoConsonants()
-        //{
-        //    Translator translator = new Translator();
-        //    Assert.AreEqual("errychay", translator.Translate("cherry"));
-        //}
+        [TestMethod]
+        public void TranslateWordBeginningWithTwoConsonants()
+        {
+            Translator translator = new Translator();
+            Assert.AreEqual("errychay", translator.Translate("cherry"));
+        }
         //[TestMethod]
         //public void TranslateTwoWords()
         //{

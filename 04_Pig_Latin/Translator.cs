@@ -11,6 +11,7 @@ namespace _04_Pig_Latin
         public string Translate(string v)
         {
             char firstletter = v[0];
+            char secondletter = v[1];
             char[] vowels = new char[5] { 'a', 'e', 'u', 'i', 'o' };
             if (vowels.Contains (firstletter))
             {
@@ -18,9 +19,18 @@ namespace _04_Pig_Latin
             }
             else
             {
-                string bob = "";
-                bob = bob.Substring(1);
-                v = bob + firstletter + "ay";
+                if (vowels.Contains(secondletter))
+                {
+                    string bob = "";
+                    bob = v.Substring(1);
+                    v = bob + firstletter + "ay";
+                }
+                else
+                {
+                    string eli = "";
+                    eli = v.Substring(2);
+                    v = eli + firstletter + secondletter + "ay";
+                }  
             }
             return v;
         }
