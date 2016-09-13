@@ -27,48 +27,48 @@ namespace _04_Pig_Latin
             Translator translator = new Translator();
             Assert.AreEqual("ananabay", translator.Translate("banana"));
         }
-        [TestMethod]
-        public void TranslateWordBeginningWithTwoConsonants()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("errychay", translator.Translate("cherry"));
-        }
-        [TestMethod]
-        public void TranslateTwoWords()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("eatay iepay", translator.Translate("eat pie"));
-        }
-        [TestMethod]
-        public void TranslateWordBeginningWithThreeConsonants()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("eethray", translator.Translate("three"));
-        }
-        [TestMethod]
-        public void Count_SCH_AsASinglePhoneme()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("oolschay", translator.Translate("school"));
-        }
-        [TestMethod]
-        public void Count_QU_AsASinglePhoneme()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("ietquay", translator.Translate("quiet"));
-        }
-        [TestMethod]
-        public void Count_QU_AsAConsonantEvenWhenPreceededByAConsonant()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("aresquay", translator.Translate("square"));
-        }
-        [TestMethod]
-        public void TranslateManyWords()
-        {
-            Translator translator = new Translator();
-            Assert.AreEqual("ethay ickquay ownbray oxfay", translator.Translate("the quick brown fox"));
-        }
+        //[TestMethod]
+        //public void TranslateWordBeginningWithTwoConsonants()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("errychay", translator.Translate("cherry"));
+        //}
+        //[TestMethod]
+        //public void TranslateTwoWords()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("eatay iepay", translator.Translate("eat pie"));
+        //}
+        //[TestMethod]
+        //public void TranslateWordBeginningWithThreeConsonants()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("eethray", translator.Translate("three"));
+        //}
+        //[TestMethod]
+        //public void Count_SCH_AsASinglePhoneme()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("oolschay", translator.Translate("school"));
+        //}
+        //[TestMethod]
+        //public void Count_QU_AsASinglePhoneme()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("ietquay", translator.Translate("quiet"));
+        //}
+        //[TestMethod]
+        //public void Count_QU_AsAConsonantEvenWhenPreceededByAConsonant()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("aresquay", translator.Translate("square"));
+        //}
+        //[TestMethod]
+        //public void TranslateManyWords()
+        //{
+        //    Translator translator = new Translator();
+        //    Assert.AreEqual("ethay ickquay ownbray oxfay", translator.Translate("the quick brown fox"));
+        //}
         //Test-driving bonus:
         // write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
         // retain the punctuation from the original phrase
