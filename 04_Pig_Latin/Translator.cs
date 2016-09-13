@@ -13,26 +13,34 @@ namespace _04_Pig_Latin
             char firstletter = v[0];
             char secondletter = v[1];
             char[] vowels = new char[5] { 'a', 'e', 'u', 'i', 'o' };
-            if (vowels.Contains (firstletter))
+            string[] words;
+            words = v.Split(' ');
+            foreach (string word in words)
             {
-                v = v + "ay";
-            }
-            else
-            {
-                if (vowels.Contains(secondletter))
+                if (vowels.Contains(firstletter))
                 {
-                    string bob = "";
-                    bob = v.Substring(1);
-                    v = bob + firstletter + "ay";
+                    v = v + "ay";
                 }
                 else
                 {
-                    string eli = "";
-                    eli = v.Substring(2);
-                    v = eli + firstletter + secondletter + "ay";
-                }  
+                    if (vowels.Contains(secondletter))
+                    {
+                        string bob = "";
+                        bob = v.Substring(1);
+                        v = bob + firstletter + "ay";
+                    }
+                    else
+                    {
+                        string eli = "";
+                        eli = v.Substring(2);
+                        v = eli + firstletter + secondletter + "ay";
+                    }
+                }
             }
+
+
             return v;
         }
     }
+
 }

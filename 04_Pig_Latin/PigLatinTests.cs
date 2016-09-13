@@ -33,12 +33,12 @@ namespace _04_Pig_Latin
             Translator translator = new Translator();
             Assert.AreEqual("errychay", translator.Translate("cherry"));
         }
-        //[TestMethod]
-        //public void TranslateTwoWords()
-        //{
-        //    Translator translator = new Translator();
-        //    Assert.AreEqual("eatay iepay", translator.Translate("eat pie"));
-        //}
+        [TestMethod]
+        public void TranslateTwoWords()
+        {
+            Translator translator = new Translator();
+            Assert.AreEqual("eatay iepay", translator.Translate("eat pie"));
+        }
         //[TestMethod]
         //public void TranslateWordBeginningWithThreeConsonants()
         //{
